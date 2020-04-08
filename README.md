@@ -1,4 +1,4 @@
-# SOLID Design Principles
+# SOLID Design Principles using C++
 
 * #### [Single Responsibility Principle](https://github.com/tal95shah/SOLID_Principles/tree/master/SingleResponsibility)<br/>
 * #### [Interface Segregation Principle](https://github.com/tal95shah/SOLID_Principles/tree/master/InterfaceSegregation)<br/>
