@@ -4,7 +4,7 @@
 * #### [Interface Segregation Principle](https://github.com/tal95shah/SOLID_Principles/tree/master/InterfaceSegregation)<br/>
 * #### [Open Closed Principle](https://github.com/tal95shah/SOLID_Principles/tree/master/OpenClosed)<br/>
 * #### [Liskov Substitution Principle](https://github.com/tal95shah/SOLID_Principles/tree/master/LiskovSubstitution)<br/>
-
+* #### [Dependency Inversion Principle](https://github.com/tal95shah/SOLID_Principles/tree/master/DependencyInversion)<br/>
 ## What happens if we don't use SOLID?
 
 * Tight coupling occurs

@@ -13,14 +13,14 @@ The interaction between high level and low level modules should be thought of as
 * High level classes -> Abstraction layer -> Low level classes
 
 
-## Without Liskov Substitution UML
-![Without Liskov Substitution UML](https://github.com/tal95shah/SOLID_Principles/blob/master/LiskovSubstitution/images/withoutLSP.png "Without Liskov Substitution UML")
+## Without Dependency Inversion UML
+![Without Dependency Inversion UML](https://github.com/tal95shah/SOLID_Principles/blob/master/DependencyInversion/images/withoutDIP.png "Without Dependency Inversion UML")
 
-#### [C++ Code of without Liskov Substitution Principle](https://github.com/tal95shah/SOLID_Principles/blob/master/LiskovSubstitution/withoutLSP.cpp)<br/>
+#### [C++ Code of without Dependency Inversion Principle](https://github.com/tal95shah/SOLID_Principles/blob/master/DependencyInversion/withoutDIP.cpp)<br/>
 
 
-## With Liskov Substitution UML
-![With Liskov Substitution UML](https://github.com/tal95shah/SOLID_Principles/blob/master/LiskovSubstitution/images/withLSP.png "With Liskov Substitution UML")
+## With Dependency Inversion UML
+![With Dependency Inversion UML](https://github.com/tal95shah/SOLID_Principles/blob/master/DependencyInversion/images/withDIP.png "With Dependency Inversion UML")
 
-#### [C++ Code of Liskov Substitution Principle](https://github.com/tal95shah/SOLID_Principles/blob/master/LiskovSubstitution/withLSP.cpp)<br/>
+#### [C++ Code of Dependency Inversion Principle](https://github.com/tal95shah/SOLID_Principles/blob/master/DependencyInversion/withDIP.cpp)<br/>
 
