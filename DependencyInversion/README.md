@@ -1,14 +1,16 @@
-# Liskov Substitution Principle
+# Dependency Inversion Principle
 
 ## Definition
 
-Derived types must be completely substitutable for their base types.
+The interaction between high level and low level modules should be thought of as an abstract interaction between them.
+
+## Motivation
+
+* If a class functionality is likely to change in future, introduce an abstraction layer between high level and low level classes.
 
 ## Implementation Guidelines
 
-* No new exceptions can be thrown by the derived type
-* Clients should not know which specific derived type they are calling
-* New derived types just extend without replacing the functionality of parent type.
+* High level classes -> Abstraction layer -> Low level classes
 
 
 ## Without Liskov Substitution UML
