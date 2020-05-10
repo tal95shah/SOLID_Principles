@@ -2,7 +2,7 @@
 
 ## Thought Process
 
-What is the responsibility of my class?
+What is the responsibility of my class/component/microservice?
 
 If the answer is more than one responsibility, you need to split responsibility(functions) into seperate classes/components/microservices.
 
