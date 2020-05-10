@@ -6,8 +6,12 @@ Every class or module should have responsibility over a single part of functiona
 
 Everything in the class or module should be related to the single purpose.
 
+What is the responsibility of my class? (Should be single)
+
 ## Motivation
 
+* EASY TO UNDERSTAND
+* 
 * Maintainability
 * Loose Coupling
 * Flexibility and Extensibility
