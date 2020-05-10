@@ -1,17 +1,19 @@
 # Single Responsibility Principle
 
+## Thought Process
+
+What is the responsibility of my class?
+
+If the answer is more than one responsibility, you need to split responsibility(functions) into seperate classes/components/microservices.
+
 ## Definition
 
 Every class or module should have responsibility over a single part of functionality provided by the software, and that responsibility should be entirely encapsulated by the class or module.
 
 Everything in the class or module should be related to the single purpose.
 
-What is the responsibility of my class? (Should be single)
-
 ## Motivation
 
-* EASY TO UNDERSTAND
-* 
 * Maintainability
 * Loose Coupling
 * Flexibility and Extensibility
@@ -30,4 +32,3 @@ As you can see, a single interface is handling multiple responsibilities (e.g em
 
 #### [C++ Code of Single Responsibility Principle](https://github.com/tal95shah/SOLID_Principles/blob/master/SingleResponsibility/withSingleResponsibility.cpp)<br/>
 
-Here, seperate interfaces for seperate responsibilites.
