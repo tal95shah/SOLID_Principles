@@ -98,7 +98,7 @@ int main(){
         Employee* contrEmp = new ContractualEmployee("Ahmed Tawaana", 40000);
         vEmps.push_back(permEmp);
         vEmps.push_back(contrEmp);
-//        this line gives static type checking error, now it satisfies lSP.
+//        this line gives static type checking error, now it satisfies LSP.
 //        Employee* tmpEmp = new TemporaryEmployee("Talha",20000);
         for (int i = 0; i < vEmps.size(); ++i) {
             vEmps[i]->printEmployeeDetails();
