@@ -1,39 +1,91 @@
 #include<iostream>
 #include<string>
+#include <vector>
+#include <memory>
+
 using namespace std;
 
-class Employee{
-    private:
-        static int counter;
-        string name;
-        int ID;
-        double salary;
-        string type;
-    public:
-        Employee(string name, double salary, string type){
-            counter++;
-            this->name = name;
-            this->salary = salary;
-            this->type = type;
-        }
-        double calculateBonus(){
-            if(this->type == "Contractual"){
-                return 0.20 * this->salary;
-            }else if(this->type == "Permanent"){
-                return 0.50 * this->salary;
-            }else{
-                return 0.0;
-            }
-        }
+class Shape{
+public:
+    string type;
+};
+
+class Rectangle : public Shape{
+private:
+    double length;
+    double width;
+public:
+    double getWidth(){
+        return width;
+    }
+    double getLength(){
+        return length;
+    }
+    Rectangle(double length1, double width1){
+        type = "Rectangle";
+        length = length1;
+        width = width1;
+    }
 
 };
 
-int Employee::counter = 0;
+class Circle : public Shape{
+private:
+    double radius;
+public:
+    double getRadius(){
+        return radius;
+    }
+    Circle(double radius1){
+        radius = radius1;
+        type = "Circle";
+    }
+
+};
+
+class Square : public Shape{
+private:
+    double side;
+public:
+    double getSide(){
+        return side;
+    }
+    Square(double side1){
+        type = "Square";
+        side = side1;
+    }
+};
+
+class PrintShapeDetails{
+public:
+    static void printArea(vector<Shape*> shapes){
+        double area;
+        for (int i = 0; i < shapes.size(); ++i) {
+            cout << "Type: " << shapes[i]->type << "\t";
+            if(shapes[i]->type == "Rectangle"){
+                Rectangle* shape = static_cast<Rectangle*>(shapes[i]);
+                area = shape->getLength() * shape->getWidth();
+                cout << "Area: " << area << endl;
+            }
+            else if(shapes[i]->type == "Square"){
+                Square* shape = static_cast<Square*>(shapes[i]);
+                area = shape->getSide() * shape->getSide();
+                cout << "Area: " << area << endl;
+            }
+            else if(shapes[i]->type == "Circle"){
+                Circle* shape = static_cast<Circle*>(shapes[i]);
+                area = (shape->getRadius() * shape->getRadius()) * 3.1416;
+                cout << "Area: " << area << endl;
+            }
+        }
+    }
+};
 
 int main(){
-    Employee *permEmp = new Employee("Talha", 50000, "Permanent");
-    Employee *contrEmp = new Employee("Basit", 50000, "Contractual");
-    cout << "Permanent Emp Bonus:" << permEmp ->  calculateBonus() << endl;
-    cout << "Contractual Emp Bonus:" << contrEmp ->  calculateBonus() << endl;
+    vector<Shape*> shapes;
+    shapes.push_back(new Rectangle(12.0,15.0));
+    shapes.push_back(new Circle(3.5));
+    shapes.push_back(new Square(4));
+    PrintShapeDetails::printArea(shapes);
     return 0;
 }
