@@ -65,18 +65,19 @@ public:
             if(shapes[i]->type == "Rectangle"){
                 Rectangle* shape = static_cast<Rectangle*>(shapes[i]);
                 area = shape->getLength() * shape->getWidth();
-                cout << "Area: " << area << endl;
+
             }
             else if(shapes[i]->type == "Square"){
                 Square* shape = static_cast<Square*>(shapes[i]);
                 area = shape->getSide() * shape->getSide();
-                cout << "Area: " << area << endl;
+
             }
             else if(shapes[i]->type == "Circle"){
                 Circle* shape = static_cast<Circle*>(shapes[i]);
                 area = (shape->getRadius() * shape->getRadius()) * 3.1416;
-                cout << "Area: " << area << endl;
+
             }
+            cout << "Area: " << area << endl;
         }
     }
 };
